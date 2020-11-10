@@ -1,14 +1,3 @@
-/*********************************************************************/
-/**   ACH2023 - Algoritmos e Estruturas de Dados I                  **/
-/**   EACH-USP - Segundo Semestre de 2020                           **/
-/**   Turma 94 - Prof. Luciano Antonio Digiampietri                 **/
-/**                                                                 **/
-/**   EP2 - Fila Preferencial                                       **/
-/**                                                                 **/
-/**   Karina Duran Munhos                   11295911                **/
-/**                                                                 **/
-/*********************************************************************/
-
 #include "filapreferencial.h"
 #include <malloc.h>
 
@@ -78,9 +67,9 @@ void exibirLog(PFILA f)
     }
     printf("\n\n");
 }
-/*Procura o anterior de um elemento em uma fila recebida por par‚metro.
-Retorna false se: n„o existir elemento com o respectivo ID recebido por par‚metro ou
-se n„o existir elemento anterior(primeiro da fila).
+/*Procura o anterior de um elemento em uma fila recebida por par√¢metro.
+Retorna false se: n√£o existir elemento com o respectivo ID recebido por par√¢metro ou
+se n√£o existir elemento anterior(primeiro da fila).
 Para definir se procura-se na fila preferencial ou na geral, eh recebido um int por paramentro
 (0 se for a geral, 1 se for a preferencial). Recebe por parametro o endereco de um ponteiro
 para armazenar o elemento anterior ao elemento com o ID recebido por parametro.
@@ -111,11 +100,11 @@ bool buscarAnt(PFILA f, int id, int fila, PONT *ant)
 }
 
 
-/*FunÁ„o para inserir pessoa na fila. Recebe uma fila, o ID da pessoa e o int que define se
-eh preferencial ou nao (1 se sim, 0 se n„o). Cria-se 2 registros diferentes se ehpreferencial
-for true: um para a fila preferencial, outro para a fila geral. Sen„o, sÛ
+/*Fun√ß√£o para inserir pessoa na fila. Recebe uma fila, o ID da pessoa e o int que define se
+eh preferencial ou nao (1 se sim, 0 se n√£o). Cria-se 2 registros diferentes se ehpreferencial
+for true: um para a fila preferencial, outro para a fila geral. Sen√£o, s√≥
 para a fila geral. Acertam-se os ponteiros de fim da fila das respectivas filas e se for o
-primeiro da fila, o ponteiro de inicio tambÈm, alÈm do prox do elemento anterior.
+primeiro da fila, o ponteiro de inicio tamb√©m, al√©m do prox do elemento anterior.
 */
 bool inserirPessoaNaFila(PFILA f, int id, bool ehPreferencial)
 {
